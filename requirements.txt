@@ -1,0 +1,7 @@
+streamlit
+PyMuPDF
+Pillow
+opencv-python-headless
+numpy
+pandas
+openpyxl
