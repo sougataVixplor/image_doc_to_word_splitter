@@ -4,11 +4,8 @@ import os
 import pandas as pd
 
 def word_splitter(image_path):
-    # get file name without extension
-    try:
-        file_name=image_path.split("/")[-1].split(".")[0]
-    except:
-        file_name=image_path.split(".")[0]
+    # get file name without extension (cross-platform safe)
+    file_name = os.path.splitext(os.path.basename(image_path))[0]
     img = cv2.imread(image_path)
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
