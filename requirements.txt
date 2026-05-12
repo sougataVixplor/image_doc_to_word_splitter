@@ -5,3 +5,5 @@ opencv-python-headless
 numpy
 pandas
 openpyxl
+pymongo
+python-dotenv
